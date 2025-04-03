@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Crafter</title>
+    <!-- Bootstrap CSS (using a different CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .button-effect {
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+      
+        .button-effect:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+      
+        .button-effect:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body class="bg-dark text-center text-white">
+    <div class="container"> 
+        <h1 class="text-center text-white col">Rock Paper Crafter</h1>
+        <h1 class="col">Pick one please</h1>
+    </div>
+    
+    <div class="row justify-content-center bg-dark text-dark">
+        <!-- Stone Option -->
+        <div id="stone" class="col-auto py-4 rounded border bg-white button-effect" style="height: 250px; width: 200px; margin-right: 20px;">
+            <img src="stone.png" alt="Stone" class="img-fluid mb-2">
+            <p>Stone</p>
+        </div>
+        <!-- Paper Option -->
+        <div id="paper" class="col-auto py-4 rounded border bg-white button-effect" style="height: 250px; width: 200px; margin-right: 20px;">
+            <img src="paper.png" alt="Paper" class="img-fluid mb-2">
+            <p>Paper</p>
+        </div>
+        <!-- Sword Option -->
+        <div id="sword" class="col-auto py-4 rounded border bg-white button-effect" style
